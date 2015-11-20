@@ -1,4 +1,4 @@
-package com.smoke_test;
+package test.java.com.smoke_test;
 
 
 import java.util.LinkedHashMap;
@@ -12,8 +12,9 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 
-import com.ilovediamonds.basetest.BaseTest;
-import com.ilovediamonds.utilities.SendEmail;
+import main.java.com.ilovediamonds.basetest.BaseTest;
+import main.java.com.ilovediamonds.entity.Product;
+import main.java.com.ilovediamonds.utilities.SendEmail;
 
 
 public class LoadtimeTest extends BaseTest {

@@ -1,4 +1,4 @@
-package com.smoke_test;
+package test.java.com.smoke_test;
 
 
 import java.util.concurrent.TimeUnit;

@@ -1,4 +1,4 @@
-package com.ilovediamonds.utilities;
+package main.java.com.ilovediamonds.utilities;
 
 
 import java.io.BufferedWriter;

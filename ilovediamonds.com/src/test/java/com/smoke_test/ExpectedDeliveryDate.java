@@ -1,4 +1,4 @@
-package com.smoke_test;
+package test.java.com.smoke_test;
 
 import java.text.DateFormat;
 import java.text.ParseException;

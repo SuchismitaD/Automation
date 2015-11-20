@@ -1,4 +1,4 @@
-package com.ilovediamonds.entity;
+package main.java.com.ilovediamonds.entity;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

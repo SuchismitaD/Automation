@@ -1,6 +1,6 @@
 
 
-package com.regression_test;
+package test.java.com.regression_test;
 
 import java.util.ArrayList;
 import java.util.List;

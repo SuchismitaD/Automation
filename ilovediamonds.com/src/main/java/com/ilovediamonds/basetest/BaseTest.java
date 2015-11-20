@@ -1,4 +1,4 @@
-package com.ilovediamonds.basetest;
+package main.java.com.ilovediamonds.basetest;
 
 import java.util.concurrent.TimeUnit;
 
@@ -10,8 +10,10 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
-import com.ilovediamonds.utilities.Utilities;
-import com.ilovediamonds.utilities.Utilities_bracelet;
+import main.java.com.ilovediamonds.utilities.Utilities;
+import main.java.com.ilovediamonds.utilities.Utilities_bracelet;
+
+
 
 public class BaseTest {
       protected WebDriver driver = null;
