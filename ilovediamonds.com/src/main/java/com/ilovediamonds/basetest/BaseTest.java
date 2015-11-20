@@ -13,7 +13,6 @@ import org.testng.annotations.Parameters;
 import main.java.com.ilovediamonds.utilities.Utilities;
 import main.java.com.ilovediamonds.utilities.Utilities_bracelet;
 
-
 public class BaseTest {
       protected WebDriver driver = null;
       protected Utilities utility = null;
