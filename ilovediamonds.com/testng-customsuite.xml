@@ -4,23 +4,23 @@
 <test name= "Automation Suite test 1">
  <parameter name="environment" value="prod"></parameter>
  <parameter name="numberOfCount" value="1"></parameter>
- <parameter name="browser" value="Chrome"></parameter>
+ <parameter name="browser" value="Firefox"></parameter>
  <classes>
-    <class name="com.smoke_test.CSVAddtoCart"/>
+    <class name="test.java.com.smoketest.CSVAddtoCart"/>
+
+     
+ </classes>
+ </test>
+ <test name= "Automation Suite test 2">
+ <parameter name="environment" value="prod"></parameter>
+ <parameter name="numberOfCount" value="1"></parameter>
+ <parameter name="browser" value="Firefox"></parameter>
+ <classes>
+    <class name="test.java.com.smoketest.CSV_name"/>
 
      
  </classes>
  </test>
  
- <test name= "Automation Suite test 2">
-  <parameter name="environment" value="prod"></parameter>
-  <parameter name="numberOfCount" value="1"></parameter>
- <parameter name="browser" value="Chrome"></parameter>
- <classes>
-     
-         <class name="com.smoke_test.CSV_name"/>
- </classes>
-</test>
+ </suite>
 
-
-</suite> 
