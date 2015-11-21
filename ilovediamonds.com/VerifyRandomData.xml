@@ -8,7 +8,7 @@
  <classes>
     <class name="test.java.com.smoketest.CSVAddtoCart"/>
 
-     
+
  </classes>
  </test>
  <test name= "Automation Suite test 2">
