@@ -1,5 +1,4 @@
 
-
 <suite name="Automation Suite"  verbose="2" parallel="tests" thread-count="6">
 
 <test name= "Automation Suite test 1">
@@ -24,3 +23,4 @@
  </test>
  
  </suite>
+
