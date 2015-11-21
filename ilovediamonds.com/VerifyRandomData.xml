@@ -11,7 +11,9 @@
 
  </classes>
  </test>
- <test name= "Automation Suite test 2">
+ 
+
+<test name= "Automation Suite test 2">
  <parameter name="environment" value="prod"></parameter>
  <parameter name="numberOfCount" value="1"></parameter>
  <parameter name="browser" value="Firefox"></parameter>
@@ -27,4 +29,3 @@
  </test>
  
  </suite>
-
