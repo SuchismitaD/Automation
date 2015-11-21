@@ -19,10 +19,6 @@
  <parameter name="browser" value="Firefox"></parameter>
  <classes>
     <class name="test.java.com.smoketest.CSV_name"/>
-
-    
-    
-    
      
      
  </classes>
