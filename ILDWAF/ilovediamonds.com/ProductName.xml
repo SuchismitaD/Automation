@@ -1,0 +1,25 @@
+<suite name="Automation Suite" verbose="2" parallel="tests"
+	thread-count="6">
+
+
+	<test name="Automation Suite test 2">
+
+		<parameter name="environment" value="prod"></parameter>
+
+		<parameter name="numberOfCount" value="10"></parameter>
+		<parameter name="to"
+			value="suchismita@ilovediamonds.com,Alaka@ilovediamonds.com"></parameter>
+
+		<parameter name="browser" value="Chrome"></parameter>
+
+		<classes>
+
+
+			<class name="test.java.com.smoketest.CSV_Name" />
+
+		</classes>
+
+	</test>
+
+
+</suite>

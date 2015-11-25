@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Automation Suite" duration-ms="764408" started-at="2015-11-25T05:29:24Z" finished-at="2015-11-25T05:42:08Z">
+    <groups>
+    </groups>
+    <test name="Automation Suite test 1" duration-ms="764408" started-at="2015-11-25T05:29:24Z" finished-at="2015-11-25T05:42:08Z">
+      <class name="test.java.com.smoketest.CSVAddtoCart">
+        <test-method status="PASS" signature="beforeSetup1(java.lang.String, java.lang.String)[pri:0, instance:test.java.com.smoketest.CSVAddtoCart@3dd3bcd]" name="beforeSetup1" is-config="true" duration-ms="16" started-at="2015-11-25T10:59:24Z" finished-at="2015-11-25T10:59:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[suchismita@ilovediamonds.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSetup1 -->
+        <test-method status="PASS" signature="createHTML()[pri:0, instance:test.java.com.smoketest.CSVAddtoCart@3dd3bcd]" name="createHTML" is-config="true" duration-ms="0" started-at="2015-11-25T10:59:24Z" finished-at="2015-11-25T10:59:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createHTML -->
+        <test-method status="PASS" signature="beforeSetup(java.lang.String, java.lang.String)[pri:0, instance:test.java.com.smoketest.CSVAddtoCart@3dd3bcd]" name="beforeSetup" is-config="true" duration-ms="39278" started-at="2015-11-25T10:59:24Z" finished-at="2015-11-25T11:00:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[prod]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSetup -->
+        <test-method status="PASS" signature="testCSVData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.java.com.smoketest.CSVAddtoCart@3dd3bcd]" name="testCSVData" duration-ms="100327" started-at="2015-11-25T11:00:03Z" data-provider="getRandomData" finished-at="2015-11-25T11:01:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[BR0064A]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[BRACELETS]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[27720]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[40788]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[18KT YELLOW GOLD]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[55]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[55]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[33]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[EXCLUSIVE]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[BANGLES]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[GH]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[SI]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[ROUND]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[18]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0.396]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[Candid Celebrations:Glitz & Gold]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="20">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCSVData -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:test.java.com.smoketest.CSVAddtoCart@3dd3bcd]" name="closeDriver" is-config="true" duration-ms="1630" started-at="2015-11-25T11:01:43Z" finished-at="2015-11-25T11:01:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method status="PASS" signature="beforeSetup(java.lang.String, java.lang.String)[pri:0, instance:test.java.com.smoketest.CSVAddtoCart@3dd3bcd]" name="beforeSetup" is-config="true" duration-ms="42599" started-at="2015-11-25T11:01:45Z" finished-at="2015-11-25T11:02:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[prod]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSetup -->
+        <test-method status="PASS" signature="testCSVData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.java.com.smoketest.CSVAddtoCart@3dd3bcd]" name="testCSVData" duration-ms="105047" started-at="2015-11-25T11:02:28Z" data-provider="getRandomData" finished-at="2015-11-25T11:04:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[PD1334A]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PENDANTS]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[25200]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[37080]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[1150]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[18KT YELLOW GOLD]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[30.06]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[20.71]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[3.864]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[EXCLUSIVE]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[FLORAL:FASHION]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[GH]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[SI]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[ROUND]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[35]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0.36]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[Candid Celebrations:Floral Fantasy:Symmetric Splendour]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[SWAROVSKI RED]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[ROUND]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[23]]>
+              </value>
+            </param>
+            <param index="20">
+              <value>
+                <![CDATA[0.37]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCSVData -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:test.java.com.smoketest.CSVAddtoCart@3dd3bcd]" name="closeDriver" is-config="true" duration-ms="994" started-at="2015-11-25T11:04:13Z" finished-at="2015-11-25T11:04:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method status="PASS" signature="beforeSetup(java.lang.String, java.lang.String)[pri:0, instance:test.java.com.smoketest.CSVAddtoCart@3dd3bcd]" name="beforeSetup" is-config="true" duration-ms="36619" started-at="2015-11-25T11:04:14Z" finished-at="2015-11-25T11:04:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[prod]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSetup -->
+        <test-method status="PASS" signature="testCSVData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.java.com.smoketest.CSVAddtoCart@3dd3bcd]" name="testCSVData" duration-ms="109290" started-at="2015-11-25T11:04:50Z" data-provider="getRandomData" finished-at="2015-11-25T11:06:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[RG0322A]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[RINGS]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[38550]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[48170]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[18KT WHITE GOLD]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[2.6]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[PREMIUM]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[WEDDING:ENGAGEMENT]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[GH]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[SI]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[ROUND]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[15]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0.39]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[Candid Celebrations:Daily Dazzle:Sensuous Solitaires]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="20">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCSVData -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:test.java.com.smoketest.CSVAddtoCart@3dd3bcd]" name="closeDriver" is-config="true" duration-ms="1134" started-at="2015-11-25T11:06:40Z" finished-at="2015-11-25T11:06:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method status="PASS" signature="beforeSetup(java.lang.String, java.lang.String)[pri:0, instance:test.java.com.smoketest.CSVAddtoCart@3dd3bcd]" name="beforeSetup" is-config="true" duration-ms="39616" started-at="2015-11-25T11:06:41Z" finished-at="2015-11-25T11:07:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[prod]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSetup -->
+        <test-method status="PASS" signature="testCSVData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.java.com.smoketest.CSVAddtoCart@3dd3bcd]" name="testCSVData" duration-ms="110460" started-at="2015-11-25T11:07:20Z" data-provider="getRandomData" finished-at="2015-11-25T11:09:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ER0279A]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[EARRINGS]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[47600]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[70040]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[11573]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[18KT YELLOW GOLD]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[38.9]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[14.7]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[8.742]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[EXCLUSIVE]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[STUDS/DROPS:CHANDELIERS]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[GH]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[SI]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[ROUND]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[100]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0.68]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[Candid Celebrations:Drops & Domes:Glitz & Gold:Just Jhumkas:Romancing Rocks]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[AMETHYST]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[SUGARLOAF]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="20">
+              <value>
+                <![CDATA[15.43]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCSVData -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:test.java.com.smoketest.CSVAddtoCart@3dd3bcd]" name="closeDriver" is-config="true" duration-ms="1065" started-at="2015-11-25T11:09:11Z" finished-at="2015-11-25T11:09:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method status="PASS" signature="beforeSetup(java.lang.String, java.lang.String)[pri:0, instance:test.java.com.smoketest.CSVAddtoCart@3dd3bcd]" name="beforeSetup" is-config="true" duration-ms="40952" started-at="2015-11-25T11:09:12Z" finished-at="2015-11-25T11:09:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[prod]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSetup -->
+        <test-method status="PASS" signature="testCSVData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.java.com.smoketest.CSVAddtoCart@3dd3bcd]" name="testCSVData" duration-ms="129397" started-at="2015-11-25T11:09:53Z" data-provider="getRandomData" finished-at="2015-11-25T11:12:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ER1540B]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[EARRINGS]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[31500]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[46350]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[18KT PINK GOLD]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[21]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[9.7]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[4.25]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[EXCLUSIVE]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[STUDS/DROPS]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[GH]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[SI]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[ROUND]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[62]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0.45]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[Daily Dazzle:Irresistible Illusions:Glitz & Gold:Symmetric Splendour]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="20">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCSVData -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:test.java.com.smoketest.CSVAddtoCart@3dd3bcd]" name="closeDriver" is-config="true" duration-ms="1038" started-at="2015-11-25T11:12:02Z" finished-at="2015-11-25T11:12:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method status="PASS" signature="prepareAndSendHTML()[pri:0, instance:test.java.com.smoketest.CSVAddtoCart@3dd3bcd]" name="prepareAndSendHTML" is-config="true" duration-ms="4832" started-at="2015-11-25T11:12:03Z" finished-at="2015-11-25T11:12:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareAndSendHTML -->
+      </class> <!-- test.java.com.smoketest.CSVAddtoCart -->
+    </test> <!-- Automation Suite test 1 -->
+  </suite> <!-- Automation Suite -->
+</testng-results>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke suite">
+  <test verbose="2" name="Add to cart test">
+  <parameter name="environment" value="prod"></parameter>
+  <parameter name="numberOfCount" value="1"></parameter>
+  <parameter name="browser" value="Firefox"></parameter>
+  
+    
+  <classes>
+   
+      <class name="test.java.com.smoketest.CSV_name"/>
+  </classes>
+  
+  </test> 
+ </suite>
