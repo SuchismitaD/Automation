@@ -9,7 +9,7 @@
     
   <classes>
    
-      <class name="com.smoke_test.test"/>
+      <class name="test.java.com.smoketest.CSV_name"/>
   </classes>
   
   </test> 

@@ -4,21 +4,25 @@ package test.java.com.smoketest;
 import java.util.LinkedHashMap;
 import java.util.concurrent.TimeUnit;
 
-
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 
 import main.java.com.ilovediamonds.basetest.BaseTest;
 import main.java.com.ilovediamonds.entity.Product;
 import main.java.com.ilovediamonds.utilities.SendEmail;
+import main.java.com.ilovediamonds.utilities.Utilities;
 
 
 public class LoadtimeTest extends BaseTest {
                 private static String htmlReport;
+                private WebDriver driver;
+                
 
                 @DataProvider(name = "getTimeOut")
                 public Object[][] getData() {
@@ -39,6 +43,8 @@ public class LoadtimeTest extends BaseTest {
 
                 @Test(dataProvider = "getTimeOut")
                 public void setData(String link,String expectedTime) throws InterruptedException {
+                	Thread.sleep(10000);
+                	driver = threadDriver.get();
                                 Thread.sleep(3000);
                                 driver.manage().deleteAllCookies();
                                 long startTime = System.currentTimeMillis();
@@ -57,10 +63,10 @@ public class LoadtimeTest extends BaseTest {
                                 else
                                                 createHtML("PASS", link,expectedTime, actualTime);
                 }
-
+           
                 @BeforeClass
                 public void createHTML() {
-                                htmlReport = "<!DOCTYPE html><html><head><p>Hi All,</p>"
+                	       htmlReport = "<!DOCTYPE html><html><head><p>Hi All,</p>"
                                                                 + "<p>Please find Automation Result for Page Load Time Out: </p>"
                                                                 + "<style>table {width:100%;}table, th, td {border: 1px solid black;border-collapse: collapse;}"
                                                                 + "th, td { padding: 5px;text-align: left;} " + "table#t01 tr:nth-child(even) {background-color: #eee;}"
@@ -73,7 +79,7 @@ public class LoadtimeTest extends BaseTest {
                 public void prepareAndSendHTML() {
                       htmlReport = htmlReport + "</body></html>";
                       SendEmail sendEmail = new SendEmail();
-                      sendEmail.sendMail(htmlReport, "Automation Test Report");
+                      sendEmail.sendMail(htmlReport, "Automation Test Report",to);
                 }
 
                 

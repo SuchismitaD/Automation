@@ -25,7 +25,7 @@ public class ExpectedDeliveryDate {
 
      
   ExpectedDeliveryDate e = new ExpectedDeliveryDate();
-  String s = e.getDate(17);//get the date after 17 days 
+  String s = e.getDate(3);//get the date after 17 days 
   System.out.println(s);
   
   WebElement element = driver.findElement(By.xpath("//form[@id='product_addtocart_form']/div[3]/div/div[3]/div[2]/span"));

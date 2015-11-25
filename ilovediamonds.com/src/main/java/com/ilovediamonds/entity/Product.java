@@ -27,12 +27,18 @@ public class Product {
 	private String GemShape;
 	private String TotalNoGem;
 	private String TotalGemWeight;
+	private String grade;
+	
 	
 	
 	public String getsku() {
 	 sku = driver.findElement(By.xpath("//span[@class='product-sku']")).getText();
 		return sku;
 	}
+	public String getgrade() {
+		 grade = driver.findElement(By.xpath("//input[@id='attribute978']")).getText();
+			return grade;
+		}
 	public String getname() {
 		name = driver.findElement(By.xpath("//div[@class='product-name']")).getText();
 		        return name;

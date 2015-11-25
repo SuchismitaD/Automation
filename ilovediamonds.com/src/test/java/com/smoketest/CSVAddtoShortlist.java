@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 
 import org.openqa.selenium.By;
-
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -29,6 +29,7 @@ public class CSVAddtoShortlist extends BaseTest {
 	private String Thumbnail5;
 	private String Shortlist1;
 	private String Shortlist2;
+	private WebDriver driver;
 
 	/**
 	 * It calls the random data values from the csv which are listed in the
@@ -73,6 +74,7 @@ public class CSVAddtoShortlist extends BaseTest {
 	@Test(dataProvider = "getRandomDataImage")
 	public void testCSVData(String sku, String name) throws InterruptedException {
 		initilizeEtry();
+		driver = threadDriver.get();
 		driver.findElement(By.xpath("//div[@id='ajax_register_close']")).click();
 
 		driver.findElement(By.id("link-account")).click();
@@ -209,7 +211,7 @@ public class CSVAddtoShortlist extends BaseTest {
 	public void prepareAndSendHTML() {
 		htmlReport = htmlReport + "</body></html>";
 		SendEmail sendEmail = new SendEmail();
-		sendEmail.sendMail(htmlReport, "Automation Test Report");
+		sendEmail.sendMail(htmlReport, "Automation Test Report",to);
 	}
 
 	public void createHtML(String result, String sku, String name, String ZoomIcon, String Thumbnail1,
