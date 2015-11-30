@@ -18,7 +18,6 @@ import main.java.com.ilovediamonds.entity.Product;
 import main.java.com.ilovediamonds.utilities.SendEmail;
 import main.java.com.ilovediamonds.utilities.Utilities;
 
-
 public class LoadtimeTest extends BaseTest {
                 private static String htmlReport;
                 private WebDriver driver;
