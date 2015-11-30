@@ -325,10 +325,12 @@ public class Utilities {
             // products and print it
       }
       
-      public String[][] getRandomShips(String[][] s, Integer count, LinkedHashMap<String, Integer> colNametoLocMap) {
+     
+     
+      public String[][] getRandomShipsfast(String[][] s, Integer count, LinkedHashMap<String, Integer> colNametoLocMap) {
 
           int rows = s.length;
-          String[][] s2 = new String[count][2];
+          String[][] s2 = new String[count][3];
           if (count < rows) {
                 Random ran = new Random();
                 Set<Integer> generated = new LinkedHashSet<Integer>();
@@ -339,79 +341,39 @@ public class Utilities {
 
                 int i = 0;
                 for (Integer j : generated) {
-                      int colLoc = colNametoLocMap.get("sku");
+                      int colLoc = colNametoLocMap.get("SKU");
                       s2[i][0] = s[j][colLoc];
 
-                      int colLoc1 = colNametoLocMap.get("grade");
+                      int colLoc1 = colNametoLocMap.get("GRADE");
                       s2[i][1] = s[j][colLoc1];
+                      
+                      int colLoc2 = colNametoLocMap.get("SIZE");
+                      s2[i][2] = s[j][colLoc2];
 
                       i++;
                 }
           } else if (count == rows) {
                 int i = 0;
                 for (int j = 0; j < s.length; j++) {
-                      int colLoc = colNametoLocMap.get("sku");
+                      int colLoc = colNametoLocMap.get("SKU");
                       s2[i][0] = s[j][colLoc];
 
-                      int colLoc1 = colNametoLocMap.get("grade");
+                      int colLoc1 = colNametoLocMap.get("GRADE");
                       s2[i][1] = s[j][colLoc1];
+                      
+                      int colLoc2 = colNametoLocMap.get("SIZE");
+                      s2[i][2] = s[j][colLoc2];
 
                 }
           }
 
-          else {
+         else {
                 System.out.println("Please enter less number");
           }
-          return s2;// it return the 17 coloum datas for the random searchable
-          // products and print it
+          return s2;
     }
-    
-    
-      public String[][] getRandomData(String[][] s, Integer count, LinkedHashMap<String, Integer> colNametoLocMap) {
 
-            int rows = s.length;
-            String[][] s2 = new String[count][2];
-            if (count < rows) {
-                  Random ran = new Random();
-                  Set<Integer> generated = new LinkedHashSet<Integer>();
-                  while (generated.size() < count) {
-                        Integer next = ran.nextInt(rows) + 1;
-                        generated.add(next);
-                  }
-
-                  int i = 0;
-                  for (Integer j : generated) {
-                        int colLoc = colNametoLocMap.get("SKU");
-                        s2[i][0] = s[j][colLoc];
-
-                        int colLoc1 = colNametoLocMap.get("GRADE");
-                        s2[i][1] = s[j][colLoc1];
-                        
-                        int colLoc2 = colNametoLocMap.get("SIZE");
-                        s2[i][2] = s[j][colLoc2];
-
-                        i++;
-                  }
-            } else if (count == rows) {
-                  int i = 0;
-                  for (int j = 0; j < s.length; j++) {
-                        int colLoc = colNametoLocMap.get("SKU");
-                        s2[i][0] = s[j][colLoc];
-
-                        int colLoc1 = colNametoLocMap.get("GRADE");
-                        s2[i][1] = s[j][colLoc1];
-                        
-                        int colLoc2 = colNametoLocMap.get("SIZE");
-                        s2[i][2] = s[j][colLoc2];
-
-                  }
-            }
-
-            else {
-                  System.out.println("Please enter less number");
-            }
-            return s2;
-      }
+      
 
       public String convertDecimal(String s) {
             float f = Float.parseFloat(s);
@@ -488,7 +450,7 @@ public class Utilities {
       }
 
       public String converPrice(String s) {
-    	  System.out.println("Price is "+ s);
+                  System.out.println("Price is "+ s);
             String s1[] = s.substring(3).split(",");
             String s2 = "";
             for (int i = 0; i < s1.length; i++) {
@@ -516,14 +478,16 @@ public class Utilities {
             String[] actualString = null;
             String[] expetedString = null;
             if(s1.contains("CREAM PEARL"))
-            	s1=s1.replace("CREAM PEARL", "PEARL");
+                s1=s1.replace("CREAM PEARL", "PEARL");
             if(s1.contains("BRIGHT GOLD PEARL"))
-            	s1=s1.replace("BRIGHT GOLD PEARL", "PEARL");
+                s1=s1.replace("BRIGHT GOLD PEARL", "PEARL");
+            if(s1.contains("ROUND,ROUND"))
+                s1=s1.replace("ROUND,ROUND", "ROUND");
             if (s.trim().equalsIgnoreCase(s1.trim())) {
                   return isMatch;
             } else {
                   
-                  actualString = s.split(",");
+                actualString = s.split(",");
 
                   if (s1.contains(":"))
                         expetedString = s1.split(":");
@@ -576,5 +540,8 @@ public class Utilities {
             return m1;
             
             
-}}
+}
+
+                
+}
 
