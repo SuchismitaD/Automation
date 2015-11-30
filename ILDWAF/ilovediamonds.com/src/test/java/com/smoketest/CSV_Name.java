@@ -24,7 +24,10 @@ import main.java.com.ilovediamonds.utilities.SendEmail;
 
 public class CSV_Name extends BaseTest {
                 private static String htmlReport;
+                
+                
                 HashMap<String, Boolean> finalResult;
+                
                 
                 private String ZoomIcon;
                 private String Thumbnail1;
