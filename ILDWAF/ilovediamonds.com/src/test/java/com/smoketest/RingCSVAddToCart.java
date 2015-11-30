@@ -4,8 +4,11 @@ package test.java.com.smoketest;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
+import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
+import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -37,11 +40,16 @@ public class RingCSVAddToCart extends BaseTest {
 		totalValues = utility.getMapValues(s, colNameToLocation);
 		Integer l = totalValues.size();
 		String[][] random = new String[l][1];
-
-		for (int i = 0; i < 1; i++) {
+		for (int i = 0; i < l; i++) {
 			random[i][0] = totalValues.keySet().toArray()[i].toString();
 		}
-		return random;// here it stores the no of input from the test suite file
+		if (isTotalCount)
+			return random;
+		else{
+			String[][] sss = getRandomKey(this.count,random);
+			return sss;
+		}
+		///return random;// here it stores the no of input from the test suite file
 						// i.e the user input
 
 	}
@@ -75,9 +83,9 @@ public class RingCSVAddToCart extends BaseTest {
 						.click();
 			List<WebElement> e = new ArrayList<WebElement>(driver.findElements(By.xpath("//select/option")));
 			for (WebElement i : e) {
-				Integer p = Integer.parseInt(i.getText().trim());
-				Integer p1 = Integer.parseInt(a[2].trim());
-				if (p == p1){
+				//Integer p = Integer.parseInt(i.getText().trim());
+				//Integer p1 = Integer.parseInt(a[2].trim());
+				if (i.getText().trim().equalsIgnoreCase(a[2].trim().toString())){
 					i.click();
 				break;
 				}
@@ -87,7 +95,7 @@ public class RingCSVAddToCart extends BaseTest {
 			// driver.findElement(By.xpath("//select[@id='attribute1018']/option[contains(text(),'"+a[2]+"'")).click();
 			// new
 			// Select(driver.findElement(By.id("attribute1018"))).selectByVisibleText(a[2]);
-			Thread.sleep(8000);
+			Thread.sleep(2000);
 			// End
 			Product productItms = null;
 			productItms = new Product(driver);
@@ -101,6 +109,12 @@ public class RingCSVAddToCart extends BaseTest {
 
 					finalResult.put("Sku", finalResult.get("Sku") & false);
 				}
+				else
+				{
+					finalResult.put("Sku", finalResult.get("Sku") & false);
+
+				}
+
 		
 			// Assert.assertTrue(actualsku.trim().toUpperCase().contains(expectedsku.trim().toUpperCase()));
 
@@ -120,7 +134,7 @@ public class RingCSVAddToCart extends BaseTest {
 				}
 			}
 
-			else
+		else
 			{
 				finalResult.put("goldweight", finalResult.get("goldweight") & false);
 
@@ -136,20 +150,21 @@ public class RingCSVAddToCart extends BaseTest {
 		finalResult = new HashMap<String, Boolean>();
 		finalResult.put("Sku", true);
 		finalResult.put("goldweight", true);
-		finalResult.put("size", true);
+		finalResult.put("ringsize", true);
+		
 	}
 
 	@BeforeClass
 	public void createHtML() {
 		htmlReport = "<!DOCTYPE html><html><head><p>Hi All,</p>"
-				+ "<p>Please find Automation Result for Random Product Add to cart : </p>"
+				+ "<p>Please find Automation Result for Random Product RingBracelet: </p>"
 				+ "<style>table {width:100%;}table, th, td {border: 1px solid black;border-collapse: collapse;}"
 				+ "th, td { padding: 5px; width:100%; text-align: left;} "
 				+ "table#t01 tr:nth-child(even) {background-color: #eee;}"
 				+ "table#t01 tr:nth-child(odd) {background-color:#fff;}"
 				+ "table#t01 th {background-color: black;color: white;}</style></head>" + "<body> " + ""
-				+ "<table ><tr>" + "<th>Result</th>" + "<th>Sku</th>" + "<th>goldweight</th>" + "<th>size</th>"
-				+ "</tr>";
+				+ "<table ><tr>" +  "<th>Sku</th>" + "<th>goldweight</th>" +"<th>ringsize</th>"+"<th>Result</th>" 
+				+ "</tr>"; 
 	}
 
 	@AfterClass
@@ -159,10 +174,10 @@ public class RingCSVAddToCart extends BaseTest {
 		sendEmail.sendMail(htmlReport, "Automation Test Report", to);
 	}
 
-	public void createHTML(String Sku, String goldweight, String size) {
+	public void createHTML(String Sku, String goldweight, String ringsize, String result) {
 
 		boolean finalRes = true;
-		String result = "PASS";
+		String result1 = "PASS";
 
 		if (!(finalResult.get("Sku"))) {
 			Sku = "<font color=red>" + Sku + "</font>";
@@ -173,22 +188,48 @@ public class RingCSVAddToCart extends BaseTest {
 			goldweight = "<font color=red>" + goldweight + "</font>";
 			finalRes = finalRes & false;
 		}
-		if (!(finalResult.get("size"))) {
-			size = "<font color=red>" + size + "</font>";
+		if (!(finalResult.get("ringsize"))) {
+			ringsize = "<font color=red>" + ringsize + "</font>";
 			finalRes = finalRes & false;
 		}
 
 		if (finalRes) {
-			result = "<font color=green>" + result + "</font>";
-		}
+			result1 = "<font color=green>" + result1 + "</font>";
+		} 
 
 		else {
-			result = "<font color=red>" + "FAIL" + "</font>";
+			result1 = "<font color=red>" + "FAIL" + "</font>";
 
 		}
-		htmlReport = htmlReport + "<tr>" + "<td>" + result + "</td>" + "<td>" + Sku + "</td>" + "<td>" + goldweight
-				+ "</td>" + "<td>" + size + "</td>" + "</tr>";
+		htmlReport = htmlReport + "<tr>" + "<td>" + Sku + "</td>" + "<td>" + goldweight + "</td>" + "<td>" + "<td>" + ringsize + "</td>"+ result1
+				+ "</td>" +  "</tr>";
 
-		finalResult = null;
+	finalResult = null;
 	}
+	
+	  public String[][] getRandomKey(Integer count,String[][] s1) {
+
+          int rows = s1.length;
+          String[][] s2 = new String[count][1];
+          if (count < rows) {
+                Random ran = new Random();
+                Set<Integer> generated = new LinkedHashSet<Integer>();
+                while (generated.size() < count) {
+                      Integer next = ran.nextInt(rows) + 1;
+                      generated.add(next);
+                }
+
+                int i = 0;
+                for (Integer j : generated) {
+                     s2[i][0] = s1[j][0];
+                      i++;
+                }
+          }
+          else {
+                System.out.println("Please enter less number");
+          }
+          return s2;// it return the 17 coloum datas for the random searchable
+          // products and print it
+    }
+   
 }
