@@ -31,20 +31,7 @@ public class CSVAddtoCart extends BaseTest {
 
 	Map<String, Boolean> finalResult;
 
-	/**
-	 * 
-	 * It calls the random data values from the csv which are listed in the
-	 * 
-	 * testCSVData
-	 *
-	 * 
-	 * 
-	 * @return the number as per the user input for how much products we wants
-	 * 
-	 *         to run
-	 * 
-	 */
-
+	
 	@DataProvider(name = "getRandomData")
 
 	public Object[][] getData() {
@@ -53,25 +40,7 @@ public class CSVAddtoCart extends BaseTest {
 
 		LinkedHashMap<String, Integer> colNameToLocation = new LinkedHashMap<String, Integer>();
 
-		String s[][] = utility.getDataFromCSV(workingdirectory + "\\products.csv", colNameToLocation);// from
-																										// utility
-																										// file
-																										// it
-																										// get
-																										// the
-																										// total
-																										// no
-																										// of
-																										// data
-																										// through
-																										// the
-																										// object
-																										// and
-																										// store
-																										// it
-																										// in
-																										// s
-
+		String s[][] = utility.getDataFromCSV(workingdirectory + "\\products.csv", colNameToLocation);
 		String random[][] = null;
 
 		if (isTotalCount) // this is the boolean value declared in the basetest
@@ -263,32 +232,15 @@ public class CSVAddtoCart extends BaseTest {
 
 		button1.click();
 
-		// verify the cart message in cart page
-
-		if (driver.getPageSource().contains("was added to your shopping cart.")) {
-
-			System.out.println("cart page message is coming for the added product");
-
-		} else {
-
-			System.out.println("cart page message is not coming");
-
-			driver.close();
-
-		}
+		
 
 		// for edit
 
-		driver.findElement(By.xpath("//a[@title='Edit item parameters']")).click();
+		//driver.findElement(By.xpath("//a[@title='Edit item parameters']")).click();
 
-		driver.findElement(By.xpath("//button[@title='Update Cart']")).click();
+		//driver.findElement(By.xpath("//button[@title='Update Cart']")).click();
 
-		// for increase and decrease quantity
-
-		driver.findElement(By.xpath("//button[@title='Increase Quantity']")).click();
-
-		driver.findElement(By.xpath("//button[@title='Decrease Quantity']")).click();
-
+		
 		driver.findElement(By.xpath("//span[contains(text(),'Proceed to Checkout')]")).click();
         if((Sku.contains("RG")||Sku.contains("BR")))
         {
