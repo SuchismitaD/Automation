@@ -44,7 +44,7 @@
 
 		<parameter name="environment" value="prod"></parameter>
 
-		<parameter name="numberOfCount" value="5"></parameter>
+		<parameter name="numberOfCount" value="1"></parameter>
 		<parameter name="to"
 			value="suchismita@ilovediamonds.com,Alaka@ilovediamonds.com,Prakash@ilovediamonds.com"></parameter>
 
@@ -66,7 +66,7 @@
 
 		<parameter name="environment" value="prod"></parameter>
 
-		<parameter name="numberOfCount" value="5"></parameter>
+		<parameter name="numberOfCount" value="1"></parameter>
 		<parameter name="to"
 			value="suchismita@ilovediamonds.com,Alaka@ilovediamonds.com,Prakash@ilovediamonds.com"></parameter>
 
@@ -86,11 +86,11 @@
 
 		<parameter name="environment" value="prod"></parameter>
 
-		<parameter name="numberOfCount" value="5"></parameter>
+		<parameter name="numberOfCount" value="1"></parameter>
 		<parameter name="to"
 			value="suchismita@ilovediamonds.com,Alaka@ilovediamonds.com,Prakash@ilovediamonds.com"></parameter>
 
-		<parameter name="browser" value="Firefox"></parameter>
+		<parameter name="browser" value="Chrome"></parameter>
 
 		<classes>
 
