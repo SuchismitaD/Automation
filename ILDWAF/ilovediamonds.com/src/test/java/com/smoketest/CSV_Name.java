@@ -22,7 +22,6 @@ import main.java.com.ilovediamonds.basetest.BaseTest;
 import main.java.com.ilovediamonds.entity.Product;
 import main.java.com.ilovediamonds.utilities.SendEmail;
 
-
 public class CSV_Name extends BaseTest {
                 private static String htmlReport;
                 
