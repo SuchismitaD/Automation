@@ -42,12 +42,13 @@ public ThreadLocal<WebDriver> threadDriver = new InheritableThreadLocal<WebDrive
 		}
 
 		d.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
-		d.get(url);
+
 		d.manage().window().maximize();
 		d.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
 		d.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 		d.manage().timeouts().setScriptTimeout(120, TimeUnit.SECONDS);
 		d.manage().deleteAllCookies();
+		d.get(url);
 		return d;
 
 	}
