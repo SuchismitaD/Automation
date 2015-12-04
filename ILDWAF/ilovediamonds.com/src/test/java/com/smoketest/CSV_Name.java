@@ -82,7 +82,7 @@ public class CSV_Name extends BaseTest {
                 public void testCSVData(String sku, String name) throws InterruptedException {
                 	initilizeEtry();
                 	driver = threadDriver.get();
-                                driver.findElement(By.xpath("//div[@id='ajax_register_close']")).click();
+                             //   driver.findElement(By.xpath("//div[@id='ajax_register_close']")).click();
                     driver.findElement(By.xpath("//div[@class='search_outer']//img")).click();
                     Thread.sleep(3000);
                     WebElement elem = driver.findElement(By.xpath("//*[@id='ild_search_box']//form//div//input[@id='search']"));

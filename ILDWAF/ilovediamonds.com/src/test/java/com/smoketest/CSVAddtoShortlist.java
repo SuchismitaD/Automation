@@ -75,7 +75,7 @@ public class CSVAddtoShortlist extends BaseTest {
 	public void testCSVData(String sku, String name) throws InterruptedException {
 		initilizeEtry();
 		driver = threadDriver.get();
-		driver.findElement(By.xpath("//div[@id='ajax_register_close']")).click();
+		//driver.findElement(By.xpath("//div[@id='ajax_register_close']")).click();
 
 		driver.findElement(By.id("link-account")).click();
 		driver.findElement(By.id("mini-login")).sendKeys("alaka@ilovediamonds.com");

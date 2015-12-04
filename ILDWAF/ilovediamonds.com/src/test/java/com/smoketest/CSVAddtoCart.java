@@ -94,7 +94,7 @@ public class CSVAddtoCart extends BaseTest {
 		System.out.println(Sku);
 		driver = threadDriver.get();
 
-		driver.findElement(By.xpath("//div[@id='ajax_register_close']")).click();// popup
+	//	driver.findElement(By.xpath("//div[@id='ajax_register_close']")).click();// popup
 																					// close
 
 		driver.findElement(By.xpath("//div[@class='search_outer']//img")).click();// for
