@@ -62,7 +62,6 @@ public class RingBracelet extends BaseTest {
 
                 }
 
-
                 @BeforeClass
                 public void createHtML() {
                                 htmlReport = "<!DOCTYPE html><html><head><p>Hi All,</p>"
