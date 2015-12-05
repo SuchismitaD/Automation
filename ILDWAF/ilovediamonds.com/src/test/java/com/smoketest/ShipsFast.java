@@ -40,7 +40,7 @@ public class ShipsFast extends BaseTest {
             String workingdirectory = System.getProperty("user.dir");
             LinkedHashMap<String, Integer> colNameToLocation = new LinkedHashMap<String, Integer>();
 
-            String s[][] = utility.getDataFromCSV(workingdirectory + "\\Shipsfast.csv", colNameToLocation);
+            String s[][] = utility.getDataFromCSV(workingdirectory + "\\Shipsfast2.csv", colNameToLocation);
             String random[][] = null;
             if (isTotalCount) // this is the boolean value declared in the basetest
                   random = utility.getRandomShipsfast(s, s.length, colNameToLocation); // csv
