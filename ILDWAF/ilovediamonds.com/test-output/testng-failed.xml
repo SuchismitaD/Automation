@@ -1,25 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="6" verbose="2" name="Failed suite [Automation Suite]" parallel="tests">
-  <parameter name="numberOfCount" value="1"/>
+  <parameter name="numberOfCount" value="5"/>
   <parameter name="environment" value="prod"/>
   <parameter name="browser" value="Chrome"/>
-  <parameter name="to" value="suchismita@ilovediamonds.com,Alaka@ilovediamonds.com"/>
-  <test name="Automation Suite test 1(failed)" parallel="tests">
-    <parameter name="numberOfCount" value="1"/>
+  <parameter name="to" value="suchismita@ilovediamonds.com,Alaka@ilovediamonds.com,Prakash@ilovediamonds.com"/>
+  <test name="Automation Suite test 2(failed)" parallel="tests">
+    <parameter name="numberOfCount" value="ALL"/>
     <parameter name="environment" value="prod"/>
     <parameter name="browser" value="Firefox"/>
     <parameter name="to" value="suchismita@ilovediamonds.com,Alaka@ilovediamonds.com,Prakash@ilovediamonds.com"/>
     <classes>
-      <class name="test.java.com.smoketest.ShipsFast">
+      <class name="test.java.com.smoketest.RingCSVAddToCart">
         <methods>
-          <include name="beforeSetup1"/>
           <include name="testCSVData" invocation-numbers="0"/>
           <include name="createHtML"/>
+          <include name="beforeSetup1"/>
           <include name="beforeSetup"/>
+          <include name="prepareAndSendHTML"/>
           <include name="closeDriver"/>
         </methods>
-      </class> <!-- test.java.com.smoketest.ShipsFast -->
+      </class> <!-- test.java.com.smoketest.RingCSVAddToCart -->
     </classes>
-  </test> <!-- Automation Suite test 1(failed) -->
+  </test> <!-- Automation Suite test 2(failed) -->
 </suite> <!-- Failed suite [Automation Suite] -->
