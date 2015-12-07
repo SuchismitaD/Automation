@@ -37,7 +37,7 @@ public class RingCSVAddToCart extends BaseTest {
 	public Object[][] getData() {
 		String workingdirectory = System.getProperty("user.dir");
 		LinkedHashMap<String, Integer> colNameToLocation = new LinkedHashMap<String, Integer>();
-		String s[][] = utility.getDataFromCSV(workingdirectory + "\\bracelet2.csv", colNameToLocation);
+		String s[][] = utility.getDataFromCSV(workingdirectory + "\\bracelet.csv", colNameToLocation);
 		totalValues = utility.getMapValues(s, colNameToLocation);
 		Integer l = totalValues.size();
 		String[][] random = new String[l][1];
