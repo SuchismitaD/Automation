@@ -14,7 +14,7 @@
 
 		<classes>
 
-			<!--   <class name="test.java.com.smoketest.ShipsFast" /> -->
+		  <class name="test.java.com.smoketest.ShipsFast" /> 
 
 
 		</classes>
@@ -24,7 +24,7 @@
 	<test name="Automation Suite test 2">
 
 		<parameter name="environment" value="prod"></parameter>
-		<parameter name="numberOfCount" value="ALL"></parameter>
+		<parameter name="numberOfCount" value="5"></parameter>
 		<parameter name="to" value="suchismita@ilovediamonds.com,Alaka@ilovediamonds.com,Prakash@ilovediamonds.com"></parameter>
 
 		<parameter name="browser" value="Firefox"></parameter>
@@ -50,7 +50,7 @@
 		<classes>
 
 
-				 <!--    <class name="test.java.com.smoketest.CSV_Name" /> -->
+				   <class name="test.java.com.smoketest.CSV_Name" /> 
 
 		</classes>
 	</test>
@@ -70,8 +70,7 @@
 
 		<classes>
 
-
-			<!--   <class name="test.java.com.smoketest.CSVAddtoCart" />  -->
+          <class name="test.java.com.smoketest.CSVAddtoCart" /> 
 
 		</classes>
 	</test>
@@ -90,7 +89,7 @@
 		<classes>
 
 
-		<!--  	  <class name="test.java.com.smoketest.LoadtimeTest" /> -->
+	  <class name="test.java.com.smoketest.LoadtimeTest" /> 
 
 		</classes>
 	</test>
